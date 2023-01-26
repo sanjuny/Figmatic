@@ -21,9 +21,9 @@ function Header() {
                 {/* dropdown */}
                 <div className="max-w-2xl mr-10">
                     <select className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2 dark:bg-white dark:placeholder-white dark:text-black">
-                        <option selected>Select team</option>
-                        <option value="US">sample 1</option>
-                        <option value="CA">sample 2</option>
+                        <option defaultValue="select">Select team</option>
+                        <option value="sample1">sample 1</option>
+                        <option value="sample2">sample 2</option>
                     </select>
                 </div>
             </div>
