@@ -7,16 +7,13 @@ import { BsDiamond, BsChatLeftText } from 'react-icons/bs'
 import { VscFileSymlinkDirectory } from 'react-icons/vsc'
 import { HiRss } from 'react-icons/hi2'
 import { RiCopyrightLine } from 'react-icons/ri'
-
-
-import { Link } from 'react-router-dom';
 import Menus from './Menus'
 
 function Leftbar() {
     const [open, setOpen] = useState(true);
     const menus = [
         { name: "DASHBOARD", link: '#', icon: BiHomeAlt },
-        { name: "KNOWLEDGE", link: '#', icon: SlGraduation },
+        { name: "KNOWLEDGE", link: '#', icon: SlGraduation},
         { name: "MEMBERS", link: '#', icon: AiOutlineUsergroupAdd },
         { name: "TEAMS", link: '#', icon: BsDiamond },
         { name: "VAULT", link: '#', icon: VscFileSymlinkDirectory },
@@ -30,7 +27,7 @@ function Leftbar() {
     ]
 
     return (
-        <section className={`flex gap-6 ${open ? 'w-64' : 'w-10'}`}>
+        <section className={`flex gap-6 ${open ? 'w-64' : 'w-10'} `}>
             <div className={`bg-[#000000] min-h-screen fixed ${open ? 'w-64' : 'w-16'}
         duration-500 text-gray-100 px-4`}>
                 <div className='py-3 flex justify-end'>
@@ -50,13 +47,13 @@ function Leftbar() {
                 </div>
                 <hr className="border-gray-600" />
                 {open ?
-                    <div className='flex gap-6 mt-2'>
+                    <div className='flex gap-6 mt-5'>
                         <p className='text-xs'>Powered By</p>
-                        <span class="inline-block py-1 px-1.5 leading-none text-center whitespace-nowrap align-baseline font-mono bg-blue-600 text-white rounded-full w-4 h-4 text-sm pr-4 pb-4"><RiCopyrightLine /></span>
+                        <span className="inline-block py-1 px-1.5 leading-none text-center whitespace-nowrap align-baseline font-mono bg-blue-600 text-white rounded-full w-4 h-4 text-sm pr-4 pb-4"><RiCopyrightLine /></span>
                         <p className='text-gray-500 text-xs'>TeamJeenyus </p>
                     </div>
                     :
-                    <span class="inline-block py-1 px-1.5 mt-4 leading-none text-center whitespace-nowrap align-baseline font-mono bg-blue-600 text-white rounded-full w-4 h-4 text-sm pr-4 pb-4"><RiCopyrightLine /></span>}
+                    <span className="inline-block py-1 px-1.5 mt-4 leading-none text-center whitespace-nowrap align-baseline font-mono bg-blue-600 text-white rounded-full w-4 h-4 text-sm pr-4 pb-4"><RiCopyrightLine /></span>}
             </div>
         </section>
     )

@@ -3,8 +3,8 @@ import React from 'react'
 function Header() {
     return (
         <>
-            <div className="flex justify-between  pl-10 pt-5">
-                <div className="flex flex-col sm:flex-row">
+            <div className="flex justify-between flex-wrap pl-10 pt-5">
+                <div className="flex flex-wrap sm:flex-row items-center justify-center">
                     <button className=" px-6 block hover:text-blue-500 focus:outline-none text-black border-b-2 font-medium border-black">
                         ALL
                     </button>
